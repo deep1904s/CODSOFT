@@ -1,4 +1,3 @@
-#Author: Tabish Ali Ansari
 
 import tkinter as tk
 from tkinter import scrolledtext
