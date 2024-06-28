@@ -1,0 +1,71 @@
+/* styles.css */
+
+/* Container styles */
+#chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat messages styles */
+#chat-messages {
+    overflow-y: scroll;
+    max-height: 300px;
+    padding: 10px;
+}
+
+/* User input styles */
+#user-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Send button styles */
+#send-button {
+    width: 70px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Chat message styles */
+.chat-message {
+    margin-bottom: 10px;
+}
+
+/* User message styles */
+.user-message {
+    color: #007bff;
+}
+
+/* Chatbot message styles */
+.chatbot-message {
+    color: #28a745;
+}
+
+/* Animation for chat messages */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.chat-message {
+    animation: slideIn 0.3s ease-in-out;
+}
