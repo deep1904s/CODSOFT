@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Title: AI Chatbot for Customer Service
-Industry: CRM - Customer Relationship Management
-@author: Tabish Ali Ansari
-"""
 
 from flask import Flask, request, jsonify
 import spacy
