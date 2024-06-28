@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-#@author: Tabish Ali Ansari
-
 import tkinter as tk
 from tkinter import filedialog, scrolledtext
 import random
