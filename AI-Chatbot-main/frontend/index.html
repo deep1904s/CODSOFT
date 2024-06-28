@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Service Chatbot</title>
     <style>
-        /* Add your CSS styles here */
     </style>
 </head>
 <body>
@@ -17,17 +16,13 @@
 
     <script>
         function sendMessage() {
-            // Get user input
             var userInput = document.getElementById("user-input").value;
             
-            // Clear input field
             document.getElementById("user-input").value = "";
             
-            // Display user message
             var chatMessages = document.getElementById("chat-messages");
             chatMessages.innerHTML += "<div>User: " + userInput + "</div>";
             
-            // Send user message to backend server
             fetch("/message", {
                 method: "POST",
                 headers: {
@@ -40,7 +35,6 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Display chatbot response
                 chatMessages.innerHTML += "<div>Chatbot: " + data.response + "</div>";
             });
         }
